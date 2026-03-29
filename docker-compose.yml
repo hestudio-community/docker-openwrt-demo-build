@@ -1,0 +1,10 @@
+services:
+  openwrt-demo:
+    build: .
+    container_name: openwrt-demo
+    privileged: true
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+      - "2222:2222"
+    restart: none
